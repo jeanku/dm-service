@@ -1,0 +1,14 @@
+{
+  "require": {
+    "jeanku/database": "dev-master",
+    "noahbuscher/macaw": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "app"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

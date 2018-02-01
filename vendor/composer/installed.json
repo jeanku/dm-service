@@ -1,0 +1,96 @@
+[
+    {
+        "name": "jeanku/database",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jeanku/database.git",
+            "reference": "8d468793e7d774a04317fe92850bc1253d6d5839"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jeanku/database/zipball/8d468793e7d774a04317fe92850bc1253d6d5839",
+            "reference": "8d468793e7d774a04317fe92850bc1253d6d5839",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2018-01-31T08:22:30+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Jeanku\\Database\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "JeanKu",
+                "email": "490573621@qq.com"
+            }
+        ],
+        "description": "light Illuminate Database package.",
+        "homepage": "https://laravel.com",
+        "keywords": [
+            "database",
+            "laravel",
+            "orm",
+            "sql"
+        ]
+    },
+    {
+        "name": "noahbuscher/macaw",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/noahbuscher/macaw.git",
+            "reference": "cf4dd15893f97539f3f91bb296e04324fbbb379e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/noahbuscher/macaw/zipball/cf4dd15893f97539f3f91bb296e04324fbbb379e",
+            "reference": "cf4dd15893f97539f3f91bb296e04324fbbb379e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "guzzle/guzzle": "~3.9",
+            "phpunit/phpunit": "^4.8-stable"
+        },
+        "time": "2018-01-09T05:51:33+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "NoahBuscher\\Macaw\\": "./"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Noah Buscher",
+                "email": "me@noahbuscher.com",
+                "homepage": "http://noahbuscher.com/"
+            }
+        ],
+        "description": "Simple PHP router class.",
+        "homepage": "https://github.com/noahbuscher/Macaw",
+        "keywords": [
+            "php",
+            "php-router",
+            "router"
+        ]
+    }
+]
