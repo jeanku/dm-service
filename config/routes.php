@@ -12,7 +12,7 @@ Macaw::get('(:all)', function($fu) {
 
 $data = Macaw::get('/home', '\App\Controllers\HomeController@home');
 
-//$data = Macaw::dispatch();
+$data = Macaw::dispatch();
 echo "<pre>";
 print_r($data);
 exit;

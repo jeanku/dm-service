@@ -25,7 +25,8 @@ class BaseController
         $model = Validate::check($field, $params);
         if ($model->fail()) {
             try {
-                $msg = reset($model->getErrorMsg());
+                $error = $model->getErrorMsg();
+                $msg = reset($error);
             } catch (\Exception $e) {
                 $msg = '参数错误';
             }

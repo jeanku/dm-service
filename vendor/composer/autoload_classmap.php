@@ -8,14 +8,4 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controllers\\BaseController' => $baseDir . '/app/Controllers/BaseController.php',
     'App\\Controllers\\HomeController' => $baseDir . '/app/Controllers/HomeController.php',
-    'App\\Models\\Article' => $baseDir . '/app/Models/Article.php',
-    'App\\Models\\CoachModel' => $baseDir . '/app/Models/CoachModel.php',
-    'App\\Models\\Test' => $baseDir . '/app/Models/Test.php',
-    'App\\Models\\WxCoachExtendModel' => $baseDir . '/app/Models/WxCoachExtendModel.php',
-    'App\\Util\\Request' => $baseDir . '/app/Util/Request.php',
-    'App\\Util\\Response' => $baseDir . '/app/Util/Response.php',
-    'Supercoach\\Util\\Curl' => $baseDir . '/app/Util/Curl.php',
-    'Supercoach\\Util\\SpeedLimiter' => $baseDir . '/app/Util/SpeedLimiter.php',
-    'Supercoach\\Util\\Validate' => $baseDir . '/app/Util/Validate.php',
-    'Supercoach\\Util\\ValidateResult' => $baseDir . '/app/Util/Validate.php',
 );

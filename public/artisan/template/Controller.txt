@@ -1,0 +1,110 @@
+<?php
+namespace App\Controllers;
+
+use App\Util\Log;
+use App\Modules\{{key}};
+
+//haha
+class {{key}}Controller extends BaseController
+{
+
+    /**
+     * lists function
+     * @date {{date}}
+     * @param array $param require parameters
+     * @return array
+     */
+    public function lists($param, $page = 1, $pagesize = 10, $order = 'id', $desc = 'desc')
+    {
+        try {
+            return $this->success({{key}}::lists($param, $page, $pagesize, $order, $desc));
+        } catch (\Exception $e) {
+            Log::warning(__CLASS__. '::' . __FUNCTION__, ['code'=>$e->getCode(), 'massage'=>$e->getMessage()]);
+            return $this->error($e->getCode(), $e->getMessage());
+        }
+    }
+
+    /**
+     * add function
+     * @date {{date}}
+     * @param array $param require parameters
+     * @return array
+     */
+    public function add($param)
+    {
+        try {
+            $filed = [
+                //todo
+            ];
+            $param = self::validate($filed, $param);
+            return $this->success({{key}}::add($param));
+        } catch (\Exception $e) {
+            Log::warning(__CLASS__. '::' . __FUNCTION__, ['code'=>$e->getCode(), 'massage'=>$e->getMessage()]);
+            return $this->error($e->getCode(), $e->getMessage());
+        }
+    }
+
+
+    /**
+     * update function
+     * @date {{date}}
+     * @param array $param require parameters
+     * @return array
+     */
+    public function update($param)
+    {
+        try {
+            $filed = [
+                //todo
+            ];
+            $param = self::validate($filed, $param);
+            return $this->success({{key}}::update($param));
+        } catch (\Exception $e) {
+            Log::warning(__CLASS__. '::' . __FUNCTION__, ['code'=>$e->getCode(), 'massage'=>$e->getMessage()]);
+            return $this->error($e->getCode(), $e->getMessage());
+        }
+    }
+
+
+    /**
+     * show function
+     * @date {{date}}
+     * @param array $param require parameters
+     * @return array
+     */
+    public function show($param)
+    {
+        try {
+            $filed = [
+                'id' => 'require|int|min:0'
+            ];
+            $param = self::validate($filed, $param);
+            return $this->success({{key}}::show($param));
+        } catch (\Exception $e) {
+            Log::warning(__CLASS__. '::' . __FUNCTION__, ['code'=>$e->getCode(), 'massage'=>$e->getMessage()]);
+            return $this->error($e->getCode(), $e->getMessage());
+        }
+    }
+
+
+    /**
+     * del function
+     * @date {{date}}
+     * @param array $param require parameters
+     * @return array
+     */
+    public function del($param)
+    {
+        try {
+            $filed = [
+                'id' => 'require|int|min:0'
+            ];
+            $param = self::validate($filed, $param);
+            return $this->success({{key}}::del($param));
+        } catch (\Exception $e) {
+            Log::warning(__CLASS__. '::' . __FUNCTION__, ['code'=>$e->getCode(), 'massage'=>$e->getMessage()]);
+            return $this->error($e->getCode(), $e->getMessage());
+        }
+    }
+
+}

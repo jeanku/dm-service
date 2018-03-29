@@ -1,0 +1,20 @@
+<?php
+namespace App\Modules;
+
+use App\Models\{{key}}Model;
+
+class {{key}} extends BaseModule
+{
+
+    /**
+     * get new model
+     * @date {{date}}
+     * @return object
+     */
+    public static function getModel()
+    {
+        return new {{key}}Model();
+    }
+
+
+}

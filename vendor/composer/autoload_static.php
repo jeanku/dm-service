@@ -39,16 +39,6 @@ class ComposerStaticInitab491ee59e1264ad0b50430a83662355
     public static $classMap = array (
         'App\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/Controllers/BaseController.php',
         'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Controllers/HomeController.php',
-        'App\\Models\\Article' => __DIR__ . '/../..' . '/app/Models/Article.php',
-        'App\\Models\\CoachModel' => __DIR__ . '/../..' . '/app/Models/CoachModel.php',
-        'App\\Models\\Test' => __DIR__ . '/../..' . '/app/Models/Test.php',
-        'App\\Models\\WxCoachExtendModel' => __DIR__ . '/../..' . '/app/Models/WxCoachExtendModel.php',
-        'App\\Util\\Request' => __DIR__ . '/../..' . '/app/Util/Request.php',
-        'App\\Util\\Response' => __DIR__ . '/../..' . '/app/Util/Response.php',
-        'Supercoach\\Util\\Curl' => __DIR__ . '/../..' . '/app/Util/Curl.php',
-        'Supercoach\\Util\\SpeedLimiter' => __DIR__ . '/../..' . '/app/Util/SpeedLimiter.php',
-        'Supercoach\\Util\\Validate' => __DIR__ . '/../..' . '/app/Util/Validate.php',
-        'Supercoach\\Util\\ValidateResult' => __DIR__ . '/../..' . '/app/Util/Validate.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

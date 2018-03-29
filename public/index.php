@@ -1,20 +1,15 @@
 <?php
 // Autoload 自动载入
 require '../vendor/autoload.php';
+require '../app/Libs/helpers.php';
 
-//error_reporting(E_ALL & ~E_NOTICE);                     //设置错误级别
-
+error_reporting(E_ALL);                     //设置错误级别
 
 define('WEBPATH', dirname(__DIR__));
 define('ENV', 'dev');
 define('CONFIGPATH',  WEBPATH . '/config/');
 
-//\Jeanku\Database\DatabaseManager::make(WEBPATH . '/config/'. ENV . '/database.php');
-
-// 路由配置
-//require '../config/routes.php';
-
-
+\Jeanku\Database\DatabaseManager::make(WEBPATH . '/config/'. ENV . '/database.php');
 
 //处理fatal error
 register_shutdown_function("error_handler");
@@ -40,7 +35,6 @@ function callFunction($controller, $function, $param)
     $instance = new $class();                                                       //实例化controller对象
     return call_user_func_array(array($instance, $function), $param);
 }
-
 
 /**
  * json输出
