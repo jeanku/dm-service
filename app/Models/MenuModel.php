@@ -1,18 +1,17 @@
 <?php
 namespace App\Models;
 
-
 class MenuModel extends BaseModel
 {
-    public $table = "manage_menu";
+    public $table = "t_manage_menu";
 
     protected $primaryKey = 'id';
 
-    protected $status_column = 'status';                                        //软删除字段
+    const STATUS = 'status';                                                    //软删除字段
 
-    const CREATED_AT = 'create_time';
+    const CREATED_AT = 'create_time';                                           //创建时间
 
-    const UPDATED_AT = 'update_time';
+    const UPDATED_AT = 'update_time';                                           //更新时间
 
     protected $fillable = [
         'id',

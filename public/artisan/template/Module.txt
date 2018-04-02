@@ -3,6 +3,12 @@ namespace App\Modules;
 
 use App\Models\{{key}}Model;
 
+/**
+ * simple description
+ * @desc more description
+ * @author {{author}}
+ * @date {{date}}
+ */
 class {{key}} extends BaseModule
 {
 

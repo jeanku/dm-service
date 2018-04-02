@@ -56,7 +56,7 @@ class BaseModule
      * @param array $select option 展示的字段
      * @return array
      */
-    public static function show($param, $select)
+    public static function show($param, $select = ['*'])
     {
         return static::getModel()->show($param, $select);
     }

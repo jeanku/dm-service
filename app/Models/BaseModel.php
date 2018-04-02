@@ -1,7 +1,6 @@
 <?php
 namespace App\Models;
 
-
 class BaseModel extends \Jeanku\Database\Eloquent\Model
 {
 

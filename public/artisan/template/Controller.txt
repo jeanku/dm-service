@@ -4,7 +4,12 @@ namespace App\Controllers;
 use App\Util\Log;
 use App\Modules\{{key}};
 
-//haha
+/**
+ * simple description
+ * @desc more description
+ * @author {{author}}
+ * @date {{date}}
+ */
 class {{key}}Controller extends BaseController
 {
 
@@ -34,7 +39,7 @@ class {{key}}Controller extends BaseController
     {
         try {
             $filed = [
-                //todo
+                {{validate}}
             ];
             $param = self::validate($filed, $param);
             return $this->success({{key}}::add($param));
@@ -55,7 +60,7 @@ class {{key}}Controller extends BaseController
     {
         try {
             $filed = [
-                //todo
+                {{validate}}
             ];
             $param = self::validate($filed, $param);
             return $this->success({{key}}::update($param));

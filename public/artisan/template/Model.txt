@@ -7,7 +7,7 @@ class {{key}}Model extends BaseModel
 
     protected $primaryKey = 'id';
 
-    protected $status_column = 'status';                                        //软删除字段
+    const STATUS = 'status';                                                    //软删除字段
 
     const CREATED_AT = 'create_time';                                           //创建时间
 

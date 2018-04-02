@@ -1,0 +1,4 @@
+config:
+
+create Controller:
+    php artisan.php Controller::Menu -t t_manage_menu
