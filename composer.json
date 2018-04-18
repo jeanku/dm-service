@@ -1,6 +1,7 @@
 {
   "require": {
     "jeanku/database": "dev-master",
+    "jeanku/rabbitmq": "dev-master",
     "noahbuscher/macaw": "dev-master"
   },
   "autoload": {

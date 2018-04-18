@@ -9,6 +9,8 @@ define('WEBPATH', dirname(__DIR__));
 define('ENV', 'dev');
 define('CONFIGPATH',  WEBPATH . '/config/');
 
+setenv();
+
 \Jeanku\Database\DatabaseManager::make(WEBPATH . '/config/'. ENV . '/database.php');
 
 //处理fatal error

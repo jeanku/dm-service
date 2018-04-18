@@ -11,15 +11,21 @@ class HomeController extends BaseController
 
     public function home($param)
     {
-        try {
-            $filed = [
-                'id' => 'require|int|min:1',
-            ];
-            $param = self::validate($filed, $param);
-            return $this->success(Menu::show($param));
-        } catch (\Exception $e) {
-            Log::emergency(__CLASS__. '::' . __FUNCTION__, ['code'=>$e->getCode(), 'massage'=>$e->getMessage()]);
-            return $this->error($e->getCode(), $e->getMessage());
-        }
+        $redis= new \Redis();
+        $redis->pconnect('127.0.0.1', 6379);
+        $redis->select(1);
+        echo 'success';
+        echo "<pre>";
+        print_r($redis->get('key33'));
+//        print_r($redis->set('key32', 23));
+//        print_r($redis->set('key33', 33));
+        exit;
+//        sleep(10);
+
+//        $res = Rabbitmq::push('e_linvo', 'key_1', function(){
+//            return json_encode(['123123'=>'412322']);
+//        });
+//        $res = Product::push('email test', 'services', 'logs');
+        return $this->success([]);
     }
 }

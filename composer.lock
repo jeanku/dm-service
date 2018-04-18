@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c932d1c08a5cb61d06e8112331b92347",
+    "content-hash": "d8b9c5ee940b6d390837f6a7a1cad9b0",
     "packages": [
         {
             "name": "jeanku/database",
@@ -48,6 +48,46 @@
                 "sql"
             ],
             "time": "2018-02-01 11:18:53"
+        },
+        {
+            "name": "jeanku/rabbitmq",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeanku/rabbitmq.git",
+                "reference": "b5a23d4c8b2858f0786978d936024ffde48bbb99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeanku/rabbitmq/zipball/b5a23d4c8b2858f0786978d936024ffde48bbb99",
+                "reference": "b5a23d4c8b2858f0786978d936024ffde48bbb99",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jeanku\\Rabbitmq\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JeanKu",
+                    "email": "490573621@qq.com"
+                }
+            ],
+            "description": "rabbitmq",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "rabbitmq"
+            ],
+            "time": "2018-04-12 12:13:04"
         },
         {
             "name": "noahbuscher/macaw",
@@ -102,6 +142,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "jeanku/database": 20,
+        "jeanku/rabbitmq": 20,
         "noahbuscher/macaw": 20
     },
     "prefer-stable": false,

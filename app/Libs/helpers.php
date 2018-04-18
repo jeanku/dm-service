@@ -281,3 +281,41 @@ if (!function_exists('config'))
         return [];
     }
 }
+
+
+if (!function_exists('setenv'))
+{
+    /**
+     * get env config.
+     * @param string $key config key
+     *
+     * @return mixed
+     */
+    function setenv()
+    {
+        $path = WEBPATH .  '/' . '.env';
+        if (is_file($path) && is_readable($path)) {
+            $file = file_get_contents($path);
+            preg_match_all('/[A-Z|_]+=[\w\.-_]+/', $file, $column);
+            foreach ($column[0] as $enval) {
+                putenv($enval);
+            }
+        }
+        return [];
+    }
+}
+
+
+if (!function_exists('env'))
+{
+    /**
+     * get env config.
+     * @param string $key config key
+     *
+     * @return mixed
+     */
+    function env($key)
+    {
+        return getenv($key);
+    }
+}

@@ -92,5 +92,47 @@
             "orm",
             "sql"
         ]
+    },
+    {
+        "name": "jeanku/rabbitmq",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jeanku/rabbitmq.git",
+            "reference": "b5a23d4c8b2858f0786978d936024ffde48bbb99"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jeanku/rabbitmq/zipball/b5a23d4c8b2858f0786978d936024ffde48bbb99",
+            "reference": "b5a23d4c8b2858f0786978d936024ffde48bbb99",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2018-04-12T12:13:04+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Jeanku\\Rabbitmq\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "JeanKu",
+                "email": "490573621@qq.com"
+            }
+        ],
+        "description": "rabbitmq",
+        "homepage": "https://laravel.com",
+        "keywords": [
+            "rabbitmq"
+        ]
     }
 ]

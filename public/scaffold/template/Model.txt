@@ -1,0 +1,19 @@
+<?php
+namespace App\Models;
+
+class {{key}}Model extends BaseModel
+{
+    public $table = "{{table}}";
+
+    protected $primaryKey = 'id';
+
+    const STATUS = 'status';                                                    //软删除字段
+
+    const CREATED_AT = 'create_time';                                           //创建时间
+
+    const UPDATED_AT = 'update_time';                                           //更新时间
+
+    protected $fillable = [
+        {{column}}
+    ];
+}

@@ -13,6 +13,7 @@ class ComposerStaticInitab491ee59e1264ad0b50430a83662355
         ),
         'J' => 
         array (
+            'Jeanku\\Rabbitmq\\' => 16,
             'Jeanku\\Database\\' => 16,
         ),
         'A' => 
@@ -25,6 +26,10 @@ class ComposerStaticInitab491ee59e1264ad0b50430a83662355
         'NoahBuscher\\Macaw\\' => 
         array (
             0 => __DIR__ . '/..' . '/noahbuscher/macaw',
+        ),
+        'Jeanku\\Rabbitmq\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jeanku/rabbitmq/src',
         ),
         'Jeanku\\Database\\' => 
         array (
@@ -39,6 +44,34 @@ class ComposerStaticInitab491ee59e1264ad0b50430a83662355
     public static $classMap = array (
         'App\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/Controllers/BaseController.php',
         'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Controllers/HomeController.php',
+        'App\\Controllers\\MenuController' => __DIR__ . '/../..' . '/app/Controllers/MenuController.php',
+        'App\\Exceptions\\ServiceException' => __DIR__ . '/../..' . '/app/Exceptions/ServiceException.php',
+        'App\\Models\\Article' => __DIR__ . '/../..' . '/app/Models/Article.php',
+        'App\\Models\\BaseModel' => __DIR__ . '/../..' . '/app/Models/BaseModel.php',
+        'App\\Models\\CoachModel' => __DIR__ . '/../..' . '/app/Models/CoachModel.php',
+        'App\\Models\\MenuModel' => __DIR__ . '/../..' . '/app/Models/MenuModel.php',
+        'App\\Modules\\BaseModule' => __DIR__ . '/../..' . '/app/Modules/BaseModule.php',
+        'App\\Modules\\Menu' => __DIR__ . '/../..' . '/app/Modules/Menu.php',
+        'App\\Services\\Demo' => __DIR__ . '/../..' . '/app/Services/Demo.php',
+        'App\\Services\\Email' => __DIR__ . '/../..' . '/app/Services/Email.php',
+        'App\\Services\\Fanout1' => __DIR__ . '/../..' . '/app/Services/Fanout1.php',
+        'App\\Services\\Fanout2' => __DIR__ . '/../..' . '/app/Services/Fanout2.php',
+        'App\\Services\\Log' => __DIR__ . '/../..' . '/app/Services/Log.php',
+        'App\\Util\\Config' => __DIR__ . '/../..' . '/app/Util/Config.php',
+        'App\\Util\\Curl' => __DIR__ . '/../..' . '/app/Util/Curl.php',
+        'App\\Util\\Enum\\Enum' => __DIR__ . '/../..' . '/app/Enum/Enum.php',
+        'App\\Util\\Enum\\UserFrozenStatus' => __DIR__ . '/../..' . '/app/Enum/UserFrozenStatus.php',
+        'App\\Util\\Image\\Image' => __DIR__ . '/../..' . '/app/Util/Image/Image.php',
+        'App\\Util\\Image\\ImageObject' => __DIR__ . '/../..' . '/app/Util/Image/ImageObject.php',
+        'App\\Util\\Log' => __DIR__ . '/../..' . '/app/Util/Log.php',
+        'App\\Util\\RabbitMQ\\Connection' => __DIR__ . '/../..' . '/app/Util/RabbitMQ/Connection.php',
+        'App\\Util\\RabbitMQ\\Consume' => __DIR__ . '/../..' . '/app/Util/RabbitMQ/Consume.php',
+        'App\\Util\\RabbitMQ\\Product' => __DIR__ . '/../..' . '/app/Util/RabbitMQ/Product.php',
+        'App\\Util\\Request' => __DIR__ . '/../..' . '/app/Util/Request.php',
+        'App\\Util\\Response' => __DIR__ . '/../..' . '/app/Util/Response.php',
+        'App\\Util\\SpeedLimiter' => __DIR__ . '/../..' . '/app/Util/SpeedLimiter.php',
+        'App\\Util\\Validate' => __DIR__ . '/../..' . '/app/Util/Validate.php',
+        'App\\Util\\ValidateResult' => __DIR__ . '/../..' . '/app/Util/Validate.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
