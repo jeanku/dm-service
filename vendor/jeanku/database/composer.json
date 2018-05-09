@@ -1,0 +1,26 @@
+{
+  "name": "jeanku/database",
+  "description": "light Illuminate Database package.",
+  "license": "MIT",
+  "homepage": "https://laravel.com",
+  "keywords": ["laravel", "database", "sql", "orm"],
+  "authors": [
+    {
+      "name": "JeanKu",
+      "email": "490573621@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Jeanku\\Database\\": ""
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev"
+}
